@@ -23,4 +23,4 @@ def group_posts(request, slug):
 context = {
     "title": "Это главная страница проекта Yatube",
     "posts_title": "Здесь будет информация о группах проекта Yatube",
-        }
+      }     
