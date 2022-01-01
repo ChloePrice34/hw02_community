@@ -22,6 +22,9 @@ class Post(models.Model):
         related_name='posts'
     )
 
+    class Meta:
+        ordering = ('-pub_date',)
+
     group = models.ForeignKey(
         Group,
         on_delete=models.SET_NULL,
@@ -32,6 +35,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.text[15]
-
-    class Meta:
-        ordering = ('-pub_date',)
