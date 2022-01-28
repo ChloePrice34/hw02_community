@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'posts',
     'users.apps.UsersConfig',
     'core',
+    'about',
 ]
 
 MIDDLEWARE = [
